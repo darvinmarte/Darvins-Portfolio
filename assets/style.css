@@ -1,0 +1,20 @@
+img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25%;
+ 
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+}

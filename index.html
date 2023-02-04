@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./assets/reset.css">
-   <link rel="stylesheet" href="./assets/style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Darvin Marte</title>
+  </head>
+  <body>
     <header>
-        <h1>Darvin Marte</h1>
-        <nav>
-                <button>Resume <a href=""></a></button>
-                <button>LinkedIn <a href=""></a></button>
-                <button>GitHub <a href=""></a></button>
-                <button>Projects <a href=""></a></button>
-                <button>Contact Me <a href=""></a></button>
-        </nav>
+      <h1>Darvin Marte</h1>
+      <h2>Full Stack Developer</h2>
+      <img src="/images/BGM01093.jpg" alt="" />
+      <nav>
+        <button><a href="#aboutme"> About Me</a></button>
+        <button>
+          <a href="https://www.linkedin.com/in/darvin-marte-16546a259/"
+            >LinkedIn</a
+          >
+        </button>
+        <button><a href="https://github.com/darvinmarte">GitHub</a></button>
+        <button><a href="#projects">Projects</a></button>
+        <button><a href="#contactme">Contact Me</a></button>
+      </nav>
     </header>
     <section>
-        <article>
-            <!-- add info  -->
-        </article>
-        <article>
-            <!-- add info  -->
-        </article>
-        <article>
-            <!-- add body  -->
-        </article>
+      <article id="aboutme">
+        <h3>About Me</h3>
+        <p>
+          My name is Darvin Marte. I am based out of New York City. I have a BA
+          in Political Science with a double minor in Business and French.
+          Although my French is not the strongest I speak fluent spanish being
+          that my parents are from Dominican Republic. I am currently attending
+          a Full Stack Developer boot camp at Columbia University. I enjoy
+          traveling, Italian food and nice clothes.
+        </p>
+      </article>
+      <article id="projects">
+        <h3>Projects</h3>
+      </article>
     </section>
-    <aside>
-        <!-- make aside to the left  -->
-    </aside>
-</body>
+  </body>
+  <footer>
+    <!-- Contact Me  -->
+    <h3>Contact</h3>
+    <section id="contactme">
+      <input
+        placeholder="First and Last Name "
+        type="text"
+        name="name"
+        required=""
+      />
+      <input placeholder="Email" type="email" name="email" required="" />
+      <textarea
+        placeholder="Your Message..."
+        type="text"
+        name="message"
+      ></textarea>
+      <input class="button" type="submit" id="submit" value="SUBMIT" />
+    </section>
+  </footer>
 </html>
