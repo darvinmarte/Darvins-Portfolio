@@ -36,6 +36,11 @@ h2 {
 nav,
 ul,
 li {
+position: absolute;
+width: 651px;
+height: 59px;
+left: 700px;
+top: 57px;
 font-size: 25px;
   display: flex;
   flex-direction: row;
