@@ -49,6 +49,7 @@ font-size: 25px;
   height: 154px;
   left: 0px;
   top: 152px;
+  background-image: image();
 }
 
 .aboutmesection {
