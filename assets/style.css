@@ -1,20 +1,153 @@
-img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 25%;
- 
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header {
+  width: 1440px;
+  height: 152px;
+  background-color: blue;
 }
 
-nav {
+h1 {
+  position: absolute;
+  width: 378px;
+  height: 98px;
+  left: 35px;
+  top: 37px;
+  font-size: 3em;
+  font-weight: bolder;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
+  justify-content: end;
+  align-items: flex-start;
 }
 
+h2 {
+  position: absolute;
+  width: 378px;
+  height: 98px;
+  left: 35px;
+  top: 37px;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+nav,
+ul,
+li {
+font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.imgholder {
+  position: absolute;
+  width: 1440px;
+  height: 154px;
+  left: 0px;
+  top: 152px;
+}
+
+.aboutmesection {
+  position: absolute;
+  width: 1440px;
+  height: 268px;
+  left: 0px;
+  top: 306px;
+}
+
+#aboutmetitle {
+  position: absolute;
+  width: 498px;
+  height: 235px;
+  left: 47px;
+  top: 327px;
+ font-weight: bold;
+  font-size: 2em;
+  display: flex;
+  justify-content: end;
+}
+
+.aboutme {
+  position: absolute;
+  width: 671px;
+  height: 235px;
+  left: 693px;
+  top: 327px;
+  line-height: 3;
+  display:flex;
+}
+
+.projectsection {
+  position: absolute;
+  width: 1440px;
+  height: 273px;
+  left: 0px;
+  top: 574px;
+}
+
+#projectstitle {
+  position: absolute;
+  width: 498px;
+  height: 235px;
+  left: 47px;
+  top: 591px;
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+}
+
+.projects {
+  position: absolute;
+  width: 671px;
+  height: 235px;
+  left: 693px;
+  top: 591px;
+}
+img{
+    max-width: 100%;
+}
 footer {
-  display: flex;
-  flex-direction: column;
-  margin: 100px;
+  position: absolute;
+  width: 1440px;
+  height: 224px;
+  left: 0px;
+  top: 800px;
 }
+
+#contacttitle {
+  position: absolute;
+  width: 376px;
+  height: 55px;
+  left: 68px;
+  top: 876px;
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+}
+
+#contactme {
+  position: absolute;
+  width: 719px;
+  height: 82px;
+  left: 588px;
+  top: 880px;
+}
+@media screen and (max-width: 992px) {
+   
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    
+  }
