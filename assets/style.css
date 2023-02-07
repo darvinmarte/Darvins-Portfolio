@@ -1,159 +1,164 @@
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-header {
-  width: 1440px;
-  height: 152px;
-  background-color: blue;
-}
 
+header {
+  display: flex;
+  flex-direction: column;
+}
+header > * {
+  flex: 1
+}
+.header-content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 h1 {
-  position: absolute;
-  width: 378px;
-  height: 98px;
-  left: 35px;
-  top: 37px;
+  padding: 1em;
   font-size: 3em;
   font-weight: bolder;
   display: flex;
-  justify-content: end;
-  align-items: flex-start;
 }
 
 h2 {
-  position: absolute;
-  width: 378px;
-  height: 98px;
-  left: 35px;
-  top: 37px;
+  padding: 1 em;
   font-size: 1.5em;
   font-weight: bold;
   display: flex;
-  justify-content: end;
-  align-items: flex-end;
 }
 
 nav,
 ul,
 li {
-position: absolute;
-width: 651px;
-height: 59px;
-left: 700px;
-top: 57px;
-font-size: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: center;
+padding: 5px;
+margin: .5em;
+font-size: 15px;
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgholder {
-  position: absolute;
-  width: 1440px;
-  height: 154px;
-  left: 0px;
-  top: 152px;
-  background-image: image();
+display: flex;
+background-image: url(../images/htmlbackgroundpic.webp);
+background-size: 100%;
+background-repeat: no-repeat;
+object-fit: contain;
+height: 30vh;
+}
+.main-container {
+display: flex;
+flex-direction:column;
+}
+.main-container > * {
+  flex: 1;
 }
 
 .aboutmesection {
-  position: absolute;
-  width: 1440px;
-  height: 268px;
-  left: 0px;
-  top: 306px;
+display: flex;
+flex-direction: column;
+justify-content:center;
 }
 
+
+
 #aboutmetitle {
-  position: absolute;
-  width: 498px;
-  height: 235px;
-  left: 47px;
-  top: 327px;
+  padding: 1em;
  font-weight: bold;
   font-size: 2em;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .aboutme {
-  position: absolute;
-  width: 671px;
-  height: 235px;
-  left: 693px;
-  top: 327px;
   line-height: 3;
   display:flex;
+  text-align: center;
+  padding: 2rem;
 }
 
 .projectsection {
-  position: absolute;
-  width: 1440px;
-  height: 273px;
-  left: 0px;
-  top: 574px;
+  display: flex;
+  flex-direction: column;
 }
 
 #projectstitle {
-  position: absolute;
-  width: 498px;
-  height: 235px;
-  left: 47px;
-  top: 591px;
+  padding: 1em;
   font-size: 2em;
   font-weight: bold;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
-
 .projects {
-  position: absolute;
-  width: 671px;
-  height: 235px;
-  left: 693px;
-  top: 591px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-img{
-    max-width: 100%;
+#project-1 {
+background-image: url(../images/Screenshot\ 2023-02-05\ at\ 8.44.55\ PM.png);
+background-size: cover;
+background-repeat: no-repeat;
+object-fit: contain;
+width: 200px;
+height: 200px;
+margin: 1rem;
+padding: .5rem;
 }
-footer {
-  position: absolute;
-  width: 1440px;
-  height: 224px;
-  left: 0px;
-  top: 800px;
+#project-2 {
+background-image: url(../images/Screenshot\ 2023-02-05\ at\ 8.44.55\ PM.png);
+background-size: cover;
+background-repeat: no-repeat;
+object-fit: contain;
+width: 200px;
+height: 200px;
+margin: 1rem;
+padding: 1rem;
 }
 
+footer {
+display: flex;
+flex-direction: column;
+}
+
+footer > * {
+  flex: 1;
+}
 #contacttitle {
-  position: absolute;
-  width: 376px;
-  height: 55px;
-  left: 68px;
-  top: 876px;
   font-size: 2em;
   font-weight: bold;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 #contactme {
-  position: absolute;
-  width: 719px;
-  height: 82px;
-  left: 588px;
-  top: 880px;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
 }
-@media screen and (max-width: 992px) {
-   
-  }
   
   /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
+  header{ 
+    flex-direction: row;
+  
+  }
+  ul, li{
+    flex-direction: row;
+    justify-content: flex-end;
     
+  }
+
+  .projects {
+    flex-direction: row;
+  }
   }
   
   /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
+  @media screen and (min-width: 576px) {
     
   }
