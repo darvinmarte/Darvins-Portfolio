@@ -38,7 +38,11 @@ h2 {
   margin-bottom: 1em;
 }
 
-nav,ul,li {
+nav{
+  display: flex;
+}
+
+ul,li {
   padding: 5px;
   margin: 0.5em;
   font-size: 15px;
@@ -46,7 +50,6 @@ nav,ul,li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   color: green;
 }
 
@@ -182,6 +185,7 @@ footer > * {
   align-items: center;
   padding: 1em;
   margin-bottom: 1em;
+  line-height: 30px;
 }
 
 #contactme:hover {
