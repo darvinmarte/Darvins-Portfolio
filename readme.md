@@ -12,7 +12,10 @@
 N/A
 
 ## Usage
+- This is the link to the deployed website
+https://darvinmarte.github.io/Darvins-Portfolio/
 
+![](./images/Screenshot%202023-02-07%20at%209.56.25%20AM.png)
 ## Credits
 
 N/A
